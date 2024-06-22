@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.main{
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    background-image: url(https://media.istockphoto.com/id/1806905453/photo/businessman-use-laptop-to-analyze-company-expenses-for-cost-reduction-management-lean.jpg?s=1024x1024&w=is&k=20&c=kL8Igb8dqFOGngEn_aMhp9rqypBBtMq0GDkGE3xDuUY=);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-size: 100vw;   
+}
+
+
+.piechart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.md1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+
+th {
+    background-color:gray;
+}
+
+
+td{
+    background-color:  #f2f2f2;
+}

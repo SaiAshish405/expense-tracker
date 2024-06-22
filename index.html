@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./et.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Expense Tracker</h1>
+            <div class="md1">
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option value=""></option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Party">Party</option>
+                    <option value="Other expenses">Other Expenses</option>
+                </select>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+                <input type="button" value="Add" id="btn">
+            </div>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount($)</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="Tbody">
+                 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td >Total Amount($)</td>
+                        <td id="totalAmount"> 0 </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="piechart" >
+            <canvas id="expenseChart" width="300" height="300"></canvas>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./et.js"></script>
+</body>
+</html>
